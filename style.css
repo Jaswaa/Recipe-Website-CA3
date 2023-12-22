@@ -100,8 +100,8 @@
 }
 
 #randomRecipeImage:hover {
-    transform: scale(1.1) translateY(-10px); /* Scale and move up slightly on hover */
-    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+    transform: scale(1.1) translateY(-10px);
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2); 
 }
 
 #api-name {
@@ -138,8 +138,8 @@
 }
 
 #latestRecipeImage:hover img {
-    transform: scale(1.1) translateY(-10px); /* Scale and move up slightly on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+    transform: scale(1.1) translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 #latestRecipeName {
@@ -174,8 +174,8 @@
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 .searchResultItem:hover img {
-    transform: scale(1.1) translateY(-10px); /* Scale and move up slightly on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+    transform: scale(1.1) translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .searchResultItem p {
