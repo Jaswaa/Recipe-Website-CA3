@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            <img id="BentoBox" src="./assets/images-removebg-preview.png" alt="logo">
+        </div>
+        <div id="hometag">
+            <p class="home" id="homebutton" onclick="reloadpage()">Home</p>
+            <p class="home">About</p>
+
+        </div>
+    </div>
+    <div id="main-body">
+        <h1 id="title">Welcome to Bento Box</h1>
+        <p id="description"> Welcome to BentoBox, Where your everyday Bento is going to be 
+            filled with a flavor-packed journey!<br> Join us in celebrating 
+            the art of balance and creativity as we transform ordinary meals
+             into extraordinary experiences.<br> Elevate your dining with BentoBox Bites 
+            where culinary creativity knows no bounds!<br>
+            <hr id="line">
+        </p>
+        <div id="searchbar">
+            <input type="text" id="searchInput" placeholder="Search recipe">
+            <img class="search" src="./assets/search_logo-removebg-preview.png" alt="search-icon" onclick="searchRecipes()">
+        </div>
+        <div id="searchResultsContainer" class="latest-recipes-container"></div>
+        <div>
+            <h3 id="random">Random Recipe:</h3>
+        </div>
+        <div id="randomfood">
+            <div id="api-image"></div>  
+            <div id="api-name"></div>
+            <div id="randomMeals" class="meal-container"></div>
+        </div>
+        
+        <hr id="line">
+
+        <div>
+            <h3 id="latest"> Latest Recipe:</h3>
+        </div>
+         <div id="latestRecipe">
+         <div id="latestRecipeImage"></div>
+         <div id="latestRecipeName"></div>
+    </div>
+         <hr id="line">
+    </div>
+    <div id="bottom">
+        <div>
+            <p>@2023<br>Made by Jaswa</p>
+        </div>
+        <div id="socialmed">
+            <img id="insta" src="./assets/118541-logo-instagram-png-download-free-removebg-preview.png">
+            
+            <img id="github" src="./assets/github.png" alt="">
+            <img id="linkedin" src="./assets/download-removebg-preview.png" >
+        </div>
+        <div>
+            <p>About</p>
+        </div>
+    </div>
+    <div id="content">
+        <div id="popup">
+            <img src="./assets/exit.png" id="exit" alt="">
+            <p id="ingredi">Ingredients:</p>
+            <div id="ingred">
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
