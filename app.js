@@ -1,12 +1,9 @@
 function randomRecipe() {
     const randomRecipeImage = document.querySelector('#api-image');
     const randomRecipeName = document.querySelector("#api-name");
-
-    // Function to show the popup with ingredients
+    
     function showIngredientsPopup(meal) {
-        // Call the function to display ingredients
         displayMealDetails(meal);
-        // Show the popup
         popup.style.display = 'block';
     }
 
@@ -17,12 +14,9 @@ function randomRecipe() {
             randomRecipeImage.innerHTML = `<img src="${res.meals[0].strMealThumb}" alt="mealImage" id="randomRecipeImage">`;
             randomRecipeName.textContent = res.meals[0].strMeal;
 
-            // Remove existing click event listeners
+            
             randomRecipeImage.removeEventListener('click', null);
-
-            // Attach a click event listener to the random image
             randomRecipeImage.addEventListener('click', function () {
-                // Call the function to show the popup with ingredients
                 showIngredientsPopup(res.meals[0]);
             });
         })
